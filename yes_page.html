@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zahra</title>
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">I knew you'd say yes </h1>
+        <div class="gif_container">
+            <img src="img2.gif">
+        </div>
+
+      <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+
+  <div class="music-box">
+    <img src="./4-01-01.png" id="picturs">
+    <img src="./Polygon 1.png" id="playBtn">
+</div>
+
+</div>
+
+<audio id="music" loop>
+  <source src="./music1" type="audio/mpeg">
+</audio>
+
+<script>
+  const playBtn = document.getElementById("playBtn");
+  const music = document.getElementById("music");
+
+  let isPlaying = false;
+
+  playBtn.addEventListener("click", function () {
+    if (isPlaying) {
+      music.pause();
+      isPlaying = false;
+    } else {
+      music.play();
+      isPlaying = true;
+    }
+  });
+</script>
+
+</body>
+</html>
